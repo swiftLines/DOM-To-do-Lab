@@ -6,7 +6,7 @@ const ulElement = document.getElementById("todo-list")
 btnElement.addEventListener('click', function(evt) {
     const newLi = document.createElement('li')
 
-    const inpElement = document.querySelector('id')
+    const inpElement = document.getElementById('in')
 
     newLi.textContent = inpElement.value
 
