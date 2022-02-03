@@ -8,8 +8,9 @@ btnElement.addEventListener('click', function(evt) {
 
     newLi.textContent = inpElement.value
 
+    if (inpElement.value !== "") {
     document.getElementById('todo-list').appendChild(newLi)
 
     inpElement.value = ""
-    
+    }
 })
