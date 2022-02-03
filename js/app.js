@@ -14,3 +14,9 @@ btnElement.addEventListener('click', function(evt) {
     inpElement.value = ""
     }
 })
+
+const resetBtn = document.createElement('button')
+resetBtn.innerHTML = "Reset"
+//append
+const body = document.querySelector('body')
+body.appendChild(resetBtn)
