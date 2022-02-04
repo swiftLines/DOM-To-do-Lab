@@ -2,6 +2,7 @@
 const inpElement = document.getElementById('in')
 const btnElement = document.getElementById('submit-button')
 const ulElement = document.getElementById("todo-list")
+const span = document.querySelector('span')
 
 btnElement.addEventListener('click', function(evt) {
     const newLi = document.createElement('li')
@@ -18,5 +19,9 @@ btnElement.addEventListener('click', function(evt) {
 const resetBtn = document.createElement('button')
 resetBtn.innerHTML = "Reset"
 //append
-const body = document.querySelector('body')
-body.appendChild(resetBtn)
+span.appendChild(resetBtn)
+
+resetBtn.addEventListener('click', function(evt) {
+    //clear ulElement
+    ulElement.innerHTML = ''
+})
